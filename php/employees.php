@@ -6,7 +6,7 @@ $add_error = '';
 $success = '';
 $current_user = '';
 
-
+//read
 $users = [];
 $result = $conn -> query("SELECT depCode, depName, depHead, depTelno FROM departments");
 if($result){
@@ -14,7 +14,7 @@ if($result){
         $users [] = $row;
     }
 }
-
+//reacd
 $employee = [];
 $emp_result = $conn -> query("SELECT * FROM employees");
 if($emp_result){
