@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add'])){
         $stmt -> close();
     }
 }
-
+//fetch to display in table
 $students = [];
 $result = $conn -> query("SELECT * FROM students");
 if($result){
@@ -80,6 +80,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])){
         $stmt -> close();
     }
 }
+//search
 $students =[];
 $search = isset($_GET['search']) ? trim($_GET['search']) : '';
 if($search){
